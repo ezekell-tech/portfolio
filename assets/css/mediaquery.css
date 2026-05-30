@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    bottom: 0;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+
+
+/********** HEADER STYLING *************/
+/****LARGE LAPTOP SCREENS **********/
+@media (min-width: 1200px){
+
+
+      .sidebar li{
+    padding-left: 8vw;
+   font-size: 15px;
+    
+   }
+      .sidebar #i-cross{
+       margin-left: -2vw;
+}
+
+ 
+}
+
+@media(max-width: 1060px){
+
+    .meals {
+    margin-left: 100px;
+}
+
+}
+
+/********** NORMAL LAPTOP SCREENS *******/
+@media(min-width: 768px) and (max-width: 1199){
+
+      header ul li{
+   font-weight: 300;
+     width: 100%;
+     }
+     header nav{
+          padding: 40px;
+     }
+   
+
+}
+@media(max-width: 850px) {
+         header ul li{
+        font-weight: 500;
+        font-size: 15px;
+     
+   
+     }
+    
+   }
+    
+/******* TABLET SCREENS **********/
+@media (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+    header #i-menu{
+    display: block;
+    font-size: 17px;
+}
+    .sidebar{
+    width: 40%;
+    }
+    .sidebar li{
+    padding-left: -5vw;
+   font-size: 15px;
+    
+   }
+   .sidebar #i-cross{
+       margin-left: 13vw;
+}
+   .meals {
+   display: flex;
+   justify-content: center;
+   margin-left: 25%; 
+}
+
+}
+@media (max-width: 480px) {
+     .meals{
+   margin-left: 17%; 
+     }
+
+
+}
+
+/******** MOBILE SCREENS ***************/
+@media (max-width: 480px){
+    .sidebar{
+width: 60%;
+}
+   .sidebar li{
+    padding-left: -10%;
+   font-size: 12px;
+   padding: 15px;
+    
+}
+.sidebar #i-cross{
+       margin-left: 20vw;
+}
+.hide{
+        display: none;
+    }
+      header #i-menu{
+    display: block;
+    font-size: 17px;
+}
+  .meals {
+   margin-left: 20%; 
+ 
+}
+header nav{
+    width: 100%;
+}
+
+}
+@media (max-width: 294px){
+    .sidebar{
+        width: 100%;
+    }
+
+}
