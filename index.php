@@ -629,7 +629,7 @@ session_start();
 
 <div class="project-card">
 
-    <img src="images/atm-system.png" alt="ATM System">
+    <img src="assets/images/home.png" alt="Wilzie Meals Restaurant">
 
     <div class="project-content">
 
@@ -672,7 +672,7 @@ session_start();
 
         <span class="close-btn">&times;</span>
 
-        <img src="images/wilzie-meals-restaurant.png" alt="Wilzie Meals Restaurant">
+        <img src="assets/images/home.png" alt="Wilzie Meals Restaurant">
 
         <h2>Wilzie Meals Restaurant</h2>
 
@@ -685,19 +685,22 @@ session_start();
         <h3>Features</h3>
 
         <ul>
-            <li>User Authentication</li>
-            <li>Deposit & Withdrawal</li>
-            <li>Balance Checking</li>
-            <li>Transaction History</li>
-            <li>SQL Database Integration</li>
+         <li>User Authentication</li>
+          <li>Book Table</li>
+          <li>View Menu</li>
+          <li>Admin Panel</li>
+          <li>Form Validation</li>
+         <li>SQL Database Integration</li>
         </ul>
 
         <h3>Technologies Used</h3>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>Php</span>
+            <span>JavaScript</span>
             <span>SQL Server</span>
-            <span>Windows Forms</span>
+            <span>Html</span>
+            <span>Css</span>
         </div>
 
     </div>
