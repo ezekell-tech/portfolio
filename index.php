@@ -545,33 +545,36 @@ session_start();
 
 
 <div class="project-card">
-
-    <img src="images/atm-system.png" alt="ATM System">
+ <img src="assets/images/ecormerce.png" alt="E-commerce Online Shipping">
 
     <div class="project-content">
 
-        <h3>ATM Management System</h3>
+        <h3>E-commerce Online Shipping</h3>
 
         <p>
-            A desktop banking application developed with C# and SQL
-            that allows users to deposit, withdraw, and check balances.
+          An online Shipping application developed with php, JavaScript and SQL
+            that allows users to create an account, add products to cart, and checkout.
         </p>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>PHP</span>
+            <span>JavaScript</span>
             <span>SQL Server</span>
-            <span>Windows Forms</span>
         </div>
 
         <div class="project-buttons">
 
-            <a href="https://github.com/yourusername/atm-system" target="_blank">
+            <a href="https://github.com/yourusername/e-commerce-online-shipping" target="_blank">
                 GitHub
             </a>
 
             <button class="details-btn">
-                View Details
+                 Details
             </button>
+
+                   <a href="https://weisshorn.shop" target="_blank">
+               Live
+            </a>
 
         </div>
 
@@ -586,32 +589,37 @@ session_start();
 
         <span class="close-btn">&times;</span>
 
-        <img src="images/atm-system.png" alt="ATM System">
 
-        <h2>ATM Management System</h2>
+        <h2>E-commerce Online Shipping</h2>
 
         <p>
-            This desktop banking system was built using C# and SQL Server.
-            The application allows users to securely manage transactions
-            including withdrawals, deposits, and balance checking.
+            This online shipping application was built using PHP, JavaScript, and SQL Server.
+            The application allows users to create an account, add products to cart, and checkout.
         </p>
 
         <h3>Features</h3>
 
         <ul>
             <li>User Authentication</li>
-            <li>Deposit & Withdrawal</li>
-            <li>Balance Checking</li>
-            <li>Transaction History</li>
+            <li>Create Account</li>
+            <li>Product Catalog</li>
+            <li>Add to Cart</li>
+            <li>Search Products</li>
+            <li>Checkout</li>
+            <li>Payment Processing</li>
+            <li>Admin Panel</li>
             <li>SQL Database Integration</li>
         </ul>
 
         <h3>Technologies Used</h3>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>PHP</span>
+            <span>JavaScript</span>
             <span>SQL Server</span>
-            <span>Windows Forms</span>
+            <span>HTML</span>
+            <span>CSS</span>
+
         </div>
 
     </div>
