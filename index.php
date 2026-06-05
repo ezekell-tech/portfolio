@@ -509,7 +509,7 @@ session_start();
 
         <span class="close-btn">&times;</span>
 
-        <img src="images/atm-system.png" alt="ATM System">
+     
 
         <h2>Student Registration System</h2>
 
@@ -633,22 +633,25 @@ session_start();
 
     <div class="project-content">
 
-        <h3>ATM Management System</h3>
+        <h3>Wilzie Meals Restaurant</h3>
 
         <p>
-            A desktop banking application developed with C# and SQL
-            that allows users to deposit, withdraw, and check balances.
+            This web-based restaurant makes customers reserve or book a table, order food online. The application is built using PHP, 
+            JavaScript and SQL Server, providing a user-friendly interface. 
+            It has an admin panel that allows administrators to manage restaurant operations.
         </p>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>PHP</span>
+            <span>JavaScript</span>
             <span>SQL Server</span>
-            <span>Windows Forms</span>
+            <span>HTML</span>
+            <span>CSS</span>
         </div>
 
         <div class="project-buttons">
 
-            <a href="https://github.com/yourusername/atm-system" target="_blank">
+            <a href="https://github.com/ezekell-tech/wilzieMeal" target="_blank">
                 GitHub
             </a>
 
@@ -669,9 +672,9 @@ session_start();
 
         <span class="close-btn">&times;</span>
 
-        <img src="images/atm-system.png" alt="ATM System">
+        <img src="images/wilzie-meals-restaurant.png" alt="Wilzie Meals Restaurant">
 
-        <h2>ATM Management System</h2>
+        <h2>Wilzie Meals Restaurant</h2>
 
         <p>
             This desktop banking system was built using C# and SQL Server.
@@ -712,7 +715,7 @@ session_start();
   <h2>More Projects</h2>
   <p>Check out more of my work on GitHub</p>
 
-  <a href="https://github.com/yourusername" target="_blank">
+  <a href="https://github.com/ezekell-tech" target="_blank">
     Visit My GitHub
   </a>
 </div>
