@@ -1,7 +1,8 @@
 
 *{
     margin: 0;
-    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body,html{
     overflow-x: hidden;
@@ -829,7 +830,7 @@ color: #94a3b8;
 
 .project-card{
     background: #111827;
-    border-radius: 24px;
+    border-radius: 10px;
     overflow: hidden;
 
     border: 1px solid rgba(255,255,255,0.05);
@@ -1016,6 +1017,24 @@ color: #94a3b8;
 
 }
 }
+
+
+.github-cta{
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.github-cta a{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 
 
 /******** CONTACT SECTION ********/

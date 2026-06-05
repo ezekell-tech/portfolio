@@ -1,3 +1,11 @@
+<?php
+session_start();
+// echo "<pre>";
+// print_r($_SESSION);
+// echo "</pre>";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -453,25 +461,26 @@
 </section>
 
 
+<!-- PROJECTS  SECTION -->
 
 <div><div class="project-text"><h2>Projects</h2></div>
 <section class="projects">
 
 <div class="project-card">
 
-    <img src="images/atm-system.png" alt="ATM System">
+    <img src="assets/images/1.png" alt="ATM System">
 
     <div class="project-content">
 
-        <h3>ATM Management System</h3>
+        <h3>Student Registration System</h3>
 
         <p>
-            A desktop banking application developed with C# and SQL
-            that allows users to deposit, withdraw, and check balances.
+            A desktop resgistration application developed with Jva and SQL
+            that allows students and adminstrators to register, add programs, and many functionalities.
         </p>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>Java</span>
             <span>SQL Server</span>
             <span>Windows Forms</span>
         </div>
@@ -492,6 +501,7 @@
 
 </div>
 
+
 <!-- DETAILS MODAL -->
 <div class="project-modal">
 
@@ -501,28 +511,29 @@
 
         <img src="images/atm-system.png" alt="ATM System">
 
-        <h2>ATM Management System</h2>
+        <h2>Student Registration System</h2>
 
         <p>
-            This desktop banking system was built using C# and SQL Server.
-            The application allows users to securely manage transactions
-            including withdrawals, deposits, and balance checking.
+           A desktop resgistration application developed with Jva and SQL
+            that allows students and adminstrators to register, add programs, and many functionalities.
         </p>
 
         <h3>Features</h3>
 
         <ul>
+            <li>Registration</li>
             <li>User Authentication</li>
-            <li>Deposit & Withdrawal</li>
-            <li>Balance Checking</li>
-            <li>Transaction History</li>
+            <li>User Validation</li>
+            <li>Add Program</li>
+            <li>Grade Checking</li>
+            <li>Search Student</li>
             <li>SQL Database Integration</li>
         </ul>
 
         <h3>Technologies Used</h3>
 
         <div class="tech-stack">
-            <span>C#</span>
+            <span>Java</span>
             <span>SQL Server</span>
             <span>Windows Forms</span>
         </div>
@@ -608,12 +619,6 @@
 </div>
 
 
-
-
-
-
-
-
 <div class="project-card">
 
     <img src="images/atm-system.png" alt="ATM System">
@@ -687,14 +692,36 @@
     </div>
 
 </div>
-
-
-
 
 
 </section>
 
 </div>
+
+
+
+<div class="github-cta">
+  <h2>More Projects</h2>
+  <p>Check out more of my work on GitHub</p>
+
+  <a href="https://github.com/yourusername" target="_blank">
+    Visit My GitHub
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- CONTACT SECTION -->
@@ -743,14 +770,14 @@
     <!-- RIGHT SIDE -->
     <div class="contact-form-wrapper">
 
-      <form action="" method="POST">
+      <form action="send.php" method="POST">
 
         <input
           type="text"
           name="name"
           class="form-control"
           placeholder="Your Name"
-          required
+          
         >
 
         <input
@@ -758,7 +785,7 @@
           name="email"
           class="form-control"
           placeholder="Your Email"
-          required
+          
         >
 
         <input
@@ -766,7 +793,7 @@
           name="subject"
           class="form-control"
           placeholder="Subject"
-          required
+          
         >
 
         <textarea
@@ -774,10 +801,10 @@
           class="form-control"
           rows="6"
           placeholder="Your Message"
-          required
+          
         ></textarea>
 
-        <button type="submit" class="btn submit-btn">
+        <button type="submit" name="submit" class="btn submit-btn">
           Send Message
         </button>
 
@@ -828,32 +855,25 @@
 </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="assets/js/all.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<div id="toast"></div>
+<?php 
+include_once 'toast.php';
+?>
+<?php if (isset($_SESSION['toast'])): ?>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    showToast(
+        "<?= addslashes($_SESSION['toast']) ?>",
+        "<?= $_SESSION['toast_type'] ?? 'info' ?>"
+    );
+});
+</script>
+<?php unset($_SESSION['toast'], $_SESSION['toast_type']); endif; ?>
 
 </body>
 </html>
